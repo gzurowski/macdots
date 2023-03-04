@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+set -ex
+BASEDIR=$(dirname "$(readlink -f "$0")")
+
+# Create symlinks
+ln -sfv "${BASEDIR}/gitconfig" "${HOME}/.gitconfig"
