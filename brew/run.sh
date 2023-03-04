@@ -1,5 +1,6 @@
 #!/usr/bin/env zsh
 set -ex
+BREWFILE="$(dirname $0)/Brewfile"
 
 # Install Homebrew
 if test ! $(which brew); then
@@ -9,3 +10,6 @@ fi
 
 # Update Homebrew
 brew update
+
+# Install all packages from Brewfile
+brew bundle --file "${BREWFILE}"
