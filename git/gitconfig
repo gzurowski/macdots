@@ -1,8 +1,23 @@
 [core]
     excludesfile = ~/.gitignore_global
+    pager = delta
+
+[delta]
+    keep-plus-minus-markers = true
+    light = true
+    navigate = true
+
+[diff]
+    colorMoved = default
 
 [help]
     autocorrect = prompt
+
+[interactive]
+    diffFilter = delta --color-only
+
+[merge]
+    conflictstyle = diff3
 
 [user]
     name = Gregor Zurowski
