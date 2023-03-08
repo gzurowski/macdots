@@ -1,4 +1,4 @@
-.PHONY: brew git
+.PHONY: brew git zsh
 
 brew:
 	@./brew/run.sh
@@ -6,5 +6,5 @@ brew:
 git:
 	@./git/run.sh
 
-zsh:
+zsh: brew
 	@./zsh/run.sh
