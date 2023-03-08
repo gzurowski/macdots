@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 set -ex
+
 # Path to Homebrew's zsh
 ZSH_PATH="/usr/local/bin/zsh"
 
 # Install oh-my-zsh if not present
-if test -z "${ZSH}" || test ! -d "${ZSH}"; then
+if ! test -d "$HOME/.oh-my-zsh"; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
 fi
 
