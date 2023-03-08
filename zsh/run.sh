@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 set -ex
 
-# Path to Homebrew's zsh
-ZSH_PATH="/usr/local/bin/zsh"
+# Path to Homebrew's zsh:
+# On Intel Macs, this is `/usr/local/bin/zsh`.
+# On Apple Silicon Macs, this is `/opt/homebrew/bin/zsh`.
+ZSH_PATH="/opt/homebrew/bin/zsh"
 
 # Install oh-my-zsh if not present
 if ! test -d "$HOME/.oh-my-zsh"; then
