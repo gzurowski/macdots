@@ -16,5 +16,7 @@ if ! grep -q "$ZSH_PATH" /etc/shells; then
     echo "$ZSH_PATH" | sudo tee -a /etc/shells
 fi
 
-# Make Homebrew's zsh the default shell
-chsh -s $ZSH_PATH
+# Make Homebrew's zsh the default shell if it isn't already
+if ! test "$SHELL" = "$ZSH_PATH"; then
+    chsh -s "$ZSH_PATH"
+fi
