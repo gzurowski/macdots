@@ -7,7 +7,10 @@ BREW_PATH="/opt/homebrew"
 if ! test -d "$BREW_PATH"; then
     echo "Installing Homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+if test -d "$BREW_PATH"; then
+    eval "$("${BREW_PATH}"/bin/brew shellenv)"
 fi
 
 # Update Homebrew
