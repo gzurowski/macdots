@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
-set -ex
+set -e
 BREWFILE="$(dirname $0)/Brewfile"
 
 # Install Homebrew
 if test ! $(which brew); then
     echo "Installing Homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # Update Homebrew
