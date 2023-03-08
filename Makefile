@@ -5,3 +5,6 @@ brew:
 
 git:
 	@./git/run.sh
+
+zsh:
+	@./zsh/run.sh
