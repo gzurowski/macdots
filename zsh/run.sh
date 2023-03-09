@@ -11,6 +11,9 @@ if ! test -d "$HOME/.oh-my-zsh"; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
 fi
 
+# Update oh-my-zsh
+"$HOME/.oh-my-zsh/tools/upgrade.sh"
+
 # Add Homebrew's zsh to /etc/shells, so it can be made the default shell
 if ! grep -q "$ZSH_PATH" /etc/shells; then
     echo "$ZSH_PATH" | sudo tee -a /etc/shells
