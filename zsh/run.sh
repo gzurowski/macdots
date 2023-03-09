@@ -16,10 +16,13 @@ fi
 
 # Add Homebrew's zsh to /etc/shells, so it can be made the default shell
 if ! grep -q "$ZSH_PATH" /etc/shells; then
+    echo "Adding $ZSH_PATH to /etc/shells..."
     echo "$ZSH_PATH" | sudo tee -a /etc/shells
 fi
 
-# Make Homebrew's zsh the default shell if it isn't already
-if ! test "$SHELL" = "$ZSH_PATH"; then
+# Make Homebrew's zsh the default shell if it isn't already.
+# Use `dscl` instead of the `$SHELL` variable, because it might not yet be set
+# after switching the default shell with `chsh`.
+if ! test "$(dscl . -read $HOME UserShell | awk '{print $2}')" = "$ZSH_PATH"; then
     chsh -s "$ZSH_PATH"
 fi
