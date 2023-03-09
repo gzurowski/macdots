@@ -1,3 +1,13 @@
+[alias]
+    cane = commit --amend --no-edit
+    co = checkout
+    hist = log --graph --pretty=format:'%C(blue)%h%Creset %C(green)%cd%C(reset) | %s %C(cyan)[%an]%C(reset) %C(italic magenta)%d%C(reset)' --date=short
+    psu = push-set-upstream
+    s = status
+
+    # scripts
+    push-set-upstream = "!git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)"
+
 [core]
     excludesfile = ~/.gitignore_global
     pager = delta
