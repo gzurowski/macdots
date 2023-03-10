@@ -29,6 +29,10 @@
 [merge]
     conflictstyle = diff3
 
+[pull]
+    ff = only
+    rebase = false
+
 [user]
     name = Gregor Zurowski
     email = gregor@zurowski.org
