@@ -3,4 +3,5 @@ tap "homebrew/core"
 
 brew "git"
 brew "git-delta"
+brew "zoxide"
 brew "zsh"
