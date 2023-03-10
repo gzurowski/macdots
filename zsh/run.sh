@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-set -ex
+set -e
+BASEDIR=$(dirname "$(readlink -f "$0")")
+
+# Create symlinks
+ln -sfv "${BASEDIR}/zshrc" "${HOME}/.zshrc"
 
 # Path to Homebrew's zsh
 ZSH_PATH="/opt/homebrew/bin/zsh" # Apple Silicon
