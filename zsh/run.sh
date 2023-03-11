@@ -16,6 +16,9 @@ if ! test -d "$HOME/.oh-my-zsh"; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
 fi
 
+# Symlink custom aliases
+ln -sfv "${BASEDIR}/aliases.zh" "${HOME}/.oh-my-zsh/custom/aliases.zh"
+
 # Update oh-my-zsh
 "$HOME/.oh-my-zsh/tools/upgrade.sh"
 
