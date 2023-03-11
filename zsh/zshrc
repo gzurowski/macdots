@@ -118,5 +118,8 @@ source "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# GPG
+export GPG_TTY=$(tty)
+
 # Zoxide
 eval "$(zoxide init zsh)"
