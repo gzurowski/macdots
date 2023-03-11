@@ -31,3 +31,9 @@ fi
 if ! test "$(dscl . -read $HOME UserShell | awk '{print $2}')" = "$ZSH_PATH"; then
     chsh -s "$ZSH_PATH"
 fi
+
+# fzf keybinding and completions
+if ! test -f "$HOME/.fzf.zsh"; then
+    echo "Installing fzf keybinding and completions..."
+    $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-bash --no-update-rc
+fi
