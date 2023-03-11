@@ -79,6 +79,10 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# Bat
+export BAT_STYLE="changes,header"
+export BAT_THEME="GitHub"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
