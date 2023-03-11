@@ -6,10 +6,7 @@ BASEDIR=$(dirname "$(readlink -f "$0")")
 ln -sfv "${BASEDIR}/zshrc" "${HOME}/.zshrc"
 
 # Path to Homebrew's zsh
-ZSH_PATH="/opt/homebrew/bin/zsh" # Apple Silicon
-if test "$(uname -m)" = "x86_64"; then
-    ZSH_PATH="/usr/local/bin/zsh" # Intel
-fi
+ZSH_PATH="$(brew --prefix)/bin/zsh"
 
 # Install oh-my-zsh if not present
 if ! test -d "$HOME/.oh-my-zsh"; then
