@@ -37,3 +37,5 @@ if ! test -f "$HOME/.fzf.zsh"; then
     echo "Installing fzf keybinding and completions..."
     $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-bash --no-update-rc
 fi
+
+source $HOME/.zshrc
