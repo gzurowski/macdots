@@ -38,4 +38,4 @@ if ! test -f "$HOME/.fzf.zsh"; then
     $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-bash --no-update-rc
 fi
 
-source $HOME/.zshrc
+exec $ZSH_PATH
