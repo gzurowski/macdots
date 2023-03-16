@@ -5,3 +5,4 @@ BASEDIR=$(dirname "$(readlink -f "$0")")
 # Create symlinks
 ln -sfv "${BASEDIR}/gitconfig" "${HOME}/.gitconfig"
 ln -sfv "${BASEDIR}/gitignore_global" "${HOME}/.gitignore_global"
+ln -sfv "${BASEDIR}/gitfunc.sh" "${HOME}/.gitfunc.sh"
