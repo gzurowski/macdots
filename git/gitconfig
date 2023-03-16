@@ -19,6 +19,15 @@
     excludesfile = ~/.gitignore_global
     pager = delta
 
+[credential]
+	# Use Git Credential Manager Core
+    # See: https://github.com/git-ecosystem/git-credential-manager
+    helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+
 [delta]
     keep-plus-minus-markers = true
     light = true
