@@ -4,6 +4,7 @@
 fzf-git-branch() {
     git rev-parse HEAD > /dev/null 2>&1 || return
 
+    # shellcheck disable=SC2016
     git branch --color=always --all --sort=-committerdate |
         grep -v HEAD |
         fzf --height 50% --ansi --no-multi --preview-window right:65% \
