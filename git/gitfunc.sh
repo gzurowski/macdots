@@ -2,7 +2,7 @@
 
 # See: https://polothy.github.io/post/2019-08-19-fzf-git-checkout/
 fzf-git-branch() {
-    git rev-parse HEAD > /dev/null 2>&1 || return
+    git rev-parse HEAD >/dev/null 2>&1 || return
 
     # shellcheck disable=SC2016
     git branch --color=always --all --sort=-committerdate |
@@ -14,7 +14,7 @@ fzf-git-branch() {
 
 # See: https://polothy.github.io/post/2019-08-19-fzf-git-checkout/
 fzf-git-checkout() {
-    git rev-parse HEAD > /dev/null 2>&1 || return
+    git rev-parse HEAD >/dev/null 2>&1 || return
 
     local branch
 
