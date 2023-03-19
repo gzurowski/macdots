@@ -27,8 +27,8 @@ fzf-git-checkout() {
     # using --track and a remote branch name, it is the same as:
     # git checkout -b branchName --track origin/branchName
     if [[ "$branch" = 'remotes/'* ]]; then
-        git checkout --track $branch
+        git checkout --track "$branch"
     else
-        git checkout $branch;
+        git checkout "$branch"
     fi
 }
