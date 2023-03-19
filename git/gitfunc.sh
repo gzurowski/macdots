@@ -4,6 +4,7 @@
 fzf-git-branch() {
     git rev-parse HEAD > /dev/null 2>&1 || return
 
+    # shellcheck disable=SC2016
     git branch --color=always --all --sort=-committerdate |
         grep -v HEAD |
         fzf --height 50% --ansi --no-multi --preview-window right:65% \
@@ -27,8 +28,8 @@ fzf-git-checkout() {
     # using --track and a remote branch name, it is the same as:
     # git checkout -b branchName --track origin/branchName
     if [[ "$branch" = 'remotes/'* ]]; then
-        git checkout --track $branch
+        git checkout --track "$branch"
     else
-        git checkout $branch;
+        git checkout "$branch"
     fi
 }
