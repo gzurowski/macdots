@@ -49,6 +49,9 @@
     ff = only
     rebase = false
 
+[rebase]
+    autoStash = true
+
 [user]
     email = gregor@zurowski.org
     name = Gregor Zurowski
