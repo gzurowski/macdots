@@ -49,6 +49,10 @@
 
 [merge]
     conflictstyle = diff3
+    tool = idea
+
+[mergetool "idea"]
+    cmd = open --new --wait-apps -a 'IntelliJ IDEA.app' --args nosplash merge $(realpath "$LOCAL") $(realpath "$REMOTE") $(realpath "$BASE") $(realpath "$MERGED")
 
 [pull]
     ff = only
