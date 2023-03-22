@@ -4,6 +4,7 @@
     dt = difftool --dir-diff
     fco = fuzzy-checkout
     hist = log --graph --pretty=format:'%C(blue)%h%Creset %C(green)%cd%C(reset) | %s %C(cyan)[%an]%C(reset) %C(italic magenta)%d%C(reset)' --date=short
+    mt = mergetool
     psu = push-set-upstream
     s = status
 
