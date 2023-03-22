@@ -35,6 +35,10 @@
 
 [diff]
     colorMoved = default
+    tool = idea
+
+[difftool "idea"]
+    cmd = open --new --wait-apps -a 'IntelliJ IDEA.app' --args nosplash diff $(realpath "$LOCAL") $(realpath "$REMOTE")
 
 [help]
     autocorrect = prompt
