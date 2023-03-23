@@ -55,6 +55,7 @@
 
 [mergetool "idea"]
     cmd = open --new --wait-apps -a 'IntelliJ IDEA.app' --args nosplash merge $(realpath "$LOCAL") $(realpath "$REMOTE") $(realpath "$BASE") $(realpath "$MERGED")
+    keepBackup = false
 
 [pull]
     ff = only
