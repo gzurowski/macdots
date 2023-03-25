@@ -8,3 +8,11 @@ then
     echo "Enabling Touch ID for sudo..."
     sudo sed -i '.bak' "2s/^/# Enable Touch ID for sudo:\nauth       sufficient     pam_tid.so\n/" /etc/pam.d/sudo
 fi
+
+# Install Rosetta
+if test "$(uname -m)" = "arm64" && \
+    ! sysctl sysctl.proc_translated >/dev/null 2>&1;
+then
+    echo "Installing Rosetta..."
+    sudo softwareupdate --install-rosetta --agree-to-license
+fi
