@@ -28,6 +28,9 @@
     helper =
     helper = /usr/local/share/gcm-core/git-credential-manager
 
+[credential "https://gitbox.apache.org"]
+	provider = generic
+
 [credential "https://dev.azure.com"]
     useHttpPath = true
 
