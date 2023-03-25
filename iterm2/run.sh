@@ -7,7 +7,7 @@ ITERM2_PATH="${HOME}/.iterm2"
 mkdir -p "${ITERM2_PATH}"
 
 # Create symlinks
-ln -sfv "${BASEDIR}/iterm2.plist" "${ITERM2_PATH}/com.googlecode.iterm2.plist"
+ln -sfv "${BASEDIR}/com.googlecode.iterm2.plist" "${ITERM2_PATH}"
 
 # Set the iTerm2 preferences directory.
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "${ITERM2_PATH}"
