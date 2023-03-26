@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "romkatv/powerlevel10k"
 
@@ -19,3 +20,6 @@ cask "google-chrome"
 cask "iterm2"
 cask "obsidian"
 cask "visual-studio-code"
+
+# Fonts
+cask "font-meslo-lg-nerd-font"
