@@ -1,6 +1,8 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
+tap "romkatv/powerlevel10k"
 
 brew "bat"
 brew "fzf"
@@ -8,6 +10,7 @@ brew "git"
 brew "git-delta"
 brew "gnupg"
 brew "pinentry-mac"
+brew "powerlevel10k"
 brew "zoxide"
 brew "zsh"
 brew "zsh-autosuggestions"
@@ -17,3 +20,6 @@ cask "google-chrome"
 cask "iterm2"
 cask "obsidian"
 cask "visual-studio-code"
+
+# Fonts
+cask "font-meslo-lg-nerd-font"
