@@ -127,6 +127,9 @@ source "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# asdf
+source "${HOMEBREW_PREFIX}/opt/asdf/libexec/asdf.sh"
+
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
