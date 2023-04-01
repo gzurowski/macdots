@@ -2,7 +2,6 @@
 set -e
 BASEDIR=$(dirname "$(readlink -f "$0")")
 
-# Set up asdf
 # shellcheck disable=SC1091
 source "${HOMEBREW_PREFIX}/opt/asdf/libexec/asdf.sh"
 
@@ -31,7 +30,7 @@ function uninstall_unlisted_sdks() {
     while read -r version; do
         echo "Uninstalling ${name} ${version}..."
         asdf uninstall "${name}" "${version}"
-    done < <(comm -23 <(echo "$installed") <(echo "$listed"))
+    done < <(comm -23 <(echo "$listed") <(echo "$installed"))
 }
 
 # Install plugins
@@ -49,5 +48,5 @@ while read -r plugin; do
 done < <(comm -23 <(asdf plugin-list) <(cat "${BASEDIR}/plugins.txt"))
 
 # Install SDKs
-install_listed_sdks "java"
-uninstall_unlisted_sdks "java"
+install_listed_sdks java; uninstall_unlisted_sdks java
+install_listed_sdks golang; uninstall_unlisted_sdks golang
