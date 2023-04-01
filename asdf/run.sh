@@ -15,14 +15,18 @@ while read -r plugin; do
 done < "${BASEDIR}/plugins.txt"
 
 # Install JDKs
-while read -r version; do
+while read -r version alias; do
     echo "Installing java ${version}..."
     asdf install java "${version}"
+    echo "Setting alias ${alias} for java ${version}..."
+    [ -n "$alias" ] && asdf alias java "${alias}" "${version}"
 done < "${BASEDIR}/java.txt"
 
 # Uninstall JDKs not in java.txt
+installed=$(comm -23 <(asdf list java | tr -d ' ' | sed 's/^\*//') <(asdf alias java --list | awk '{print $1}' ) | sort)
+defined=$(cat "${BASEDIR}/java.txt" | awk '{print $1}' | sort)
+
 while read -r version; do
-    version="${version/#\*/}"
-    echo "Uninstalling Java ${version}..."
+    echo "Uninstalling java ${version}..."
     asdf uninstall java "${version}"
-done < <(asdf list java | grep -v -f "${BASEDIR}/java.txt" -)
+done < <(comm -23 <(echo "$installed") <(echo "$defined"))
