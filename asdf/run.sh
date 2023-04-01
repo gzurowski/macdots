@@ -11,19 +11,23 @@ function install_listed_sdks() {
     while read -r version alias; do
         echo "Installing ${name} ${version}..."
         asdf install "$name" "$version"
-        echo "Setting alias ${alias} for ${name} ${version}..."
-        [ -n "$alias" ] && asdf alias "$name" "$alias" "$version"
+        if [[ -n "$alias" && "${version}" != $(asdf alias "$name" "$alias") ]]; then
+            echo "Setting alias ${alias} for ${name} ${version}..."
+            asdf alias "$name" "$alias" "$version"
+        fi
     done < "${BASEDIR}/${name}.txt"
 }
 
 function uninstall_unlisted_sdks() {
     local name="$1"
+    local installed
+    local listed
     # Get installed versions of the SDK minus its aliases
-    local installed=$(comm -23 \
+    installed=$(comm -23 \
         <(asdf list "$name" | tr -d ' ' | sed 's/^\*//') \
         <(asdf alias "$name" --list | awk '{print $1}' ) | \
         sort) 
-    local listed=$(awk '{print $1}' < "${BASEDIR}/${name}.txt" | sort)
+    listed=$(awk '{print $1}' < "${BASEDIR}/${name}.txt" | sort)
     while read -r version; do
         echo "Uninstalling ${name} ${version}..."
         asdf uninstall "${name}" "${version}"
