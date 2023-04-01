@@ -14,6 +14,12 @@ while read -r plugin; do
     sh -c "asdf plugin-add ${plugin}" || true
 done < "${BASEDIR}/plugins.txt"
 
+# Remove plugins not in plugins.txt
+while read -r plugin; do
+    echo "Uninstalling plugin '${plugin}'..."
+    asdf plugin-remove "${plugin}"
+done < <(comm -23 <(asdf plugin-list) <(cat "${BASEDIR}/plugins.txt"))
+
 # Install JDKs
 while read -r version alias; do
     echo "Installing java ${version}..."
@@ -23,10 +29,14 @@ while read -r version alias; do
 done < "${BASEDIR}/java.txt"
 
 # Uninstall JDKs not in java.txt
-installed=$(comm -23 <(asdf list java | tr -d ' ' | sed 's/^\*//') <(asdf alias java --list | awk '{print $1}' ) | sort)
-defined=$(cat "${BASEDIR}/java.txt" | awk '{print $1}' | sort)
+# Take a list of installed JDKs and remove all aliases.
+installed=$(comm -23 \
+    <(asdf list java | tr -d ' ' | sed 's/^\*//') \
+    <(asdf alias java --list | awk '{print $1}' ) | \
+    sort) 
+selected=$(awk '{print $1}' < "${BASEDIR}/java.txt" | sort)
 
 while read -r version; do
     echo "Uninstalling java ${version}..."
     asdf uninstall java "${version}"
-done < <(comm -23 <(echo "$installed") <(echo "$defined"))
+done < <(comm -23 <(echo "$installed") <(echo "$selected"))
