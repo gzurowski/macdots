@@ -6,6 +6,30 @@ BASEDIR=$(dirname "$(readlink -f "$0")")
 # shellcheck disable=SC1091
 source "${HOMEBREW_PREFIX}/opt/asdf/libexec/asdf.sh"
 
+function install_listed_sdks() {
+    local name="$1"
+    while read -r version alias; do
+        echo "Installing ${name} ${version}..."
+        asdf install "$name" "$version"
+        echo "Setting alias ${alias} for ${name} ${version}..."
+        [ -n "$alias" ] && asdf alias "$name" "$alias" "$version"
+    done < "${BASEDIR}/${name}.txt"
+}
+
+function uninstall_unlisted_sdks() {
+    local name="$1"
+    # Get installed versions of the SDK minus its aliases
+    local installed=$(comm -23 \
+        <(asdf list "$name" | tr -d ' ' | sed 's/^\*//') \
+        <(asdf alias "$name" --list | awk '{print $1}' ) | \
+        sort) 
+    local listed=$(awk '{print $1}' < "${BASEDIR}/${name}.txt" | sort)
+    while read -r version; do
+        echo "Uninstalling ${name} ${version}..."
+        asdf uninstall "${name}" "${version}"
+    done < <(comm -23 <(echo "$installed") <(echo "$listed"))
+}
+
 # Install plugins
 while read -r plugin; do
     echo "Installing plugin '${plugin}'..."
@@ -20,23 +44,6 @@ while read -r plugin; do
     asdf plugin-remove "${plugin}"
 done < <(comm -23 <(asdf plugin-list) <(cat "${BASEDIR}/plugins.txt"))
 
-# Install JDKs
-while read -r version alias; do
-    echo "Installing java ${version}..."
-    asdf install java "${version}"
-    echo "Setting alias ${alias} for java ${version}..."
-    [ -n "$alias" ] && asdf alias java "${alias}" "${version}"
-done < "${BASEDIR}/java.txt"
-
-# Uninstall JDKs not in java.txt
-# Take a list of installed JDKs and remove all aliases.
-installed=$(comm -23 \
-    <(asdf list java | tr -d ' ' | sed 's/^\*//') \
-    <(asdf alias java --list | awk '{print $1}' ) | \
-    sort) 
-selected=$(awk '{print $1}' < "${BASEDIR}/java.txt" | sort)
-
-while read -r version; do
-    echo "Uninstalling java ${version}..."
-    asdf uninstall java "${version}"
-done < <(comm -23 <(echo "$installed") <(echo "$selected"))
+# Install SDKs
+install_listed_sdks "java"
+uninstall_unlisted_sdks "java"
