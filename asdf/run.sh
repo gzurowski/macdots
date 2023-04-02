@@ -33,6 +33,9 @@ function uninstall_unlisted_sdks() {
     done < <(comm -23 <(echo "$listed") <(echo "$installed"))
 }
 
+# Create symlinks
+ln -sfv "${BASEDIR}/tool-versions" "${HOME}/.tool-versions"
+
 # Install plugins
 while read -r plugin; do
     echo "Installing plugin '${plugin}'..."
