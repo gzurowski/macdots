@@ -103,6 +103,9 @@ source "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 # zsh-syntax-highlighting
 source "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
+# zsh-abbr
+source "${HOMEBREW_PREFIX}/share/zsh-abbr/zsh-abbr.zsh"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
