@@ -9,14 +9,14 @@ brew:
 git:
 	@./git/run.sh
 
-gpg: brew
+gpg:
 	@./gpg/run.sh
 
-iterm2: brew
+iterm2:
 	@./iterm2/run.sh
 
 mac:
 	@./mac/run.sh
 
-zsh: brew
+zsh:
 	@./zsh/run.sh
