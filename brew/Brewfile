@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+tap "olets/tap" # zsh-abbr
 tap "romkatv/powerlevel10k"
 
 brew "asdf"
@@ -15,6 +16,7 @@ brew "pinentry-mac"
 brew "powerlevel10k"
 brew "zoxide"
 brew "zsh"
+brew "zsh-abbr"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
