@@ -39,4 +39,8 @@ if ! test -f "$HOME/.fzf.zsh"; then
     "$(brew --prefix)"/opt/fzf/install --key-bindings --completion --no-bash --no-update-rc
 fi
 
+# Set up zsh-abbr abbreviations
+zsh -ic "abbr import-git-aliases --user --prefix 'git '" 2>&1 | grep -v "already exists" || true
+zsh -ic "abbr import-aliases --user" 2>&1 | grep -v "already exists" || true
+
 exec $ZSH_PATH
