@@ -51,5 +51,6 @@ while read -r plugin; do
 done < <(comm -23 <(asdf plugin-list) <(cat "${BASEDIR}/plugins.txt"))
 
 # Install SDKs
-install_listed_sdks java; uninstall_unlisted_sdks java
-install_listed_sdks golang; uninstall_unlisted_sdks golang
+for sdk in golang java; do
+    install_listed_sdks "$sdk"; uninstall_unlisted_sdks "$sdk"
+done
