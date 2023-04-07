@@ -23,14 +23,14 @@ function uninstall_unlisted_sdks() {
     local listed
     # Get installed versions of the SDK minus its aliases
     installed=$(comm -23 \
-        <(asdf list "$name" | tr -d ' ' | sed 's/^\*//') \
-        <(asdf alias "$name" --list | awk '{print $1}' ) | \
-        sort) 
+        <(asdf list "$name" | tr -d ' ' | sed 's/^\*//' | sort) \
+        <(asdf alias "$name" --list | awk '{print $1}' | sort) \
+        )
     listed=$(awk '{print $1}' < "${BASEDIR}/${name}.txt" | sort)
     while read -r version; do
         echo "Uninstalling ${name} ${version}..."
         asdf uninstall "${name}" "${version}"
-    done < <(comm -23 <(echo "$listed") <(echo "$installed"))
+    done < <(comm -23 <(echo "$installed") <(echo "$listed"))
 }
 
 # Create symlinks
