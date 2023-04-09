@@ -1,3 +1,4 @@
 alias
+flutter
 golang
 java
