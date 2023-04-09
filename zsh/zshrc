@@ -82,6 +82,7 @@ plugins=(
     asdf
     brew
     git
+    zoxide
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -136,6 +137,3 @@ source "${HOMEBREW_PREFIX}/share/zsh-abbr/zsh-abbr.zsh"
 
 # GPG
 export GPG_TTY=$(tty)
-
-# Zoxide
-eval "$(zoxide init zsh)"
