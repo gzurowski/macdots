@@ -81,6 +81,7 @@ export ZSH_COMPDUMP=$ZH/cache/.zcompdump-${HOST}-${ZSH_VERSION}
 plugins=(
     asdf
     brew
+    fzf
     git
     zoxide
 )
@@ -131,9 +132,6 @@ source "${HOMEBREW_PREFIX}/share/zsh-abbr/zsh-abbr.zsh"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # GPG
 export GPG_TTY=$(tty)
