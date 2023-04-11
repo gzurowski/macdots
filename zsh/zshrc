@@ -81,6 +81,7 @@ export ZSH_COMPDUMP=$ZH/cache/.zcompdump-${HOST}-${ZSH_VERSION}
 plugins=(
     asdf
     brew
+    docker
     fzf
     git
     zoxide
