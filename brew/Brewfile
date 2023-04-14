@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+tap "microsoft/git" # git-credential-manager-core
 tap "olets/tap" # zsh-abbr
 tap "romkatv/powerlevel10k"
 
@@ -11,6 +12,7 @@ brew "coreutils"
 brew "fzf"
 brew "git"
 brew "git-delta"
+brew "git-credential-manager-core"
 brew "gnupg"
 brew "pinentry-mac"
 brew "powerlevel10k"
