@@ -8,6 +8,8 @@
     mt = mergetool
     pfwl = push --force-with-lease
     psu = push-set-upstream
+    rb = rebase
+    rbi = rebase --interactive
     s = status
 
     # scripts
