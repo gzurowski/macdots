@@ -1,4 +1,5 @@
 [alias]
+    bsc = branch --show-current
     cane = commit --amend --no-edit
     co = checkout
     dt = difftool --dir-diff
