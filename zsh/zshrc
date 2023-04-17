@@ -82,6 +82,7 @@ plugins=(
     asdf
     brew
     docker
+    flutter
     fzf
     git
     zoxide
