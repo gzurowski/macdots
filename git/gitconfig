@@ -47,6 +47,9 @@
     colorMoved = default
     tool = idea
 
+[difftool "code"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
 [difftool "idea"]
     cmd = open --new --wait-apps -a 'IntelliJ IDEA.app' --args nosplash diff $(realpath "$LOCAL") $(realpath "$REMOTE")
 
@@ -59,6 +62,9 @@
 [merge]
     conflictstyle = diff3
     tool = idea
+
+[mergetool "code"]
+    cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
 
 [mergetool "idea"]
     cmd = open --new --wait-apps -a 'IntelliJ IDEA.app' --args nosplash merge $(realpath "$LOCAL") $(realpath "$REMOTE") $(realpath "$BASE") $(realpath "$MERGED")
