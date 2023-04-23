@@ -82,6 +82,7 @@ plugins=(
     asdf
     brew
     docker
+    docker-compose
     flutter
     fzf
     git
