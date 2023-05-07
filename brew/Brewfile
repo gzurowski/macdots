@@ -25,6 +25,7 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
 cask "boop"
+cask "calibre"
 cask "docker"
 cask "google-chrome"
 cask "iterm2"
