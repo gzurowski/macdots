@@ -29,6 +29,7 @@ cask "calibre"
 cask "docker"
 cask "google-chrome"
 cask "iterm2"
+cask "jetbrains-toolbox"
 cask "obsidian"
 cask "visual-studio-code"
 
