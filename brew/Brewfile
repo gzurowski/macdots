@@ -36,3 +36,6 @@ cask "visual-studio-code"
 
 # Fonts
 cask "font-meslo-lg-nerd-font"
+
+# App Store
+mas "Magnet", id: 441258766
