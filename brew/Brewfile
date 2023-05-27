@@ -33,6 +33,7 @@ cask "google-chrome"
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "obsidian"
+cask "slack"
 cask "visual-studio-code"
 
 # Fonts
