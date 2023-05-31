@@ -22,3 +22,6 @@ brew update
 
 # Install all packages from Brewfile
 brew bundle --file "${BREWFILE}"
+
+# Remove all packages not listed in Brewfile
+brew bundle cleanup --file "${BREWFILE}" --force
