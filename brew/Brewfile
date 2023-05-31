@@ -36,6 +36,7 @@ cask "keepassxc"
 cask "obsidian"
 cask "slack"
 cask "visual-studio-code"
+cask "yubico-authenticator"
 
 # Fonts
 cask "font-meslo-lg-nerd-font"
