@@ -30,14 +30,11 @@
 [credential]
     # Use Git Credential Manager Core
     # See: https://github.com/git-ecosystem/git-credential-manager
-    helper =
-    helper = /usr/local/share/gcm-core/git-credential-manager
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
 
 [credential "https://gitbox.apache.org"]
 	provider = generic
-
-[credential "https://dev.azure.com"]
-    useHttpPath = true
 
 [delta]
     keep-plus-minus-markers = true
@@ -82,3 +79,5 @@
     email = gregor@zurowski.org
     name = Gregor Zurowski
     signingkey = 3C5519FD8D34480D
+[credential "https://dev.azure.com"]
+	useHttpPath = true
