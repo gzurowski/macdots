@@ -1,4 +1,5 @@
 {
+    "editor.inlineSuggest.enabled": true,
     "workbench.colorTheme": "Default Light+",
     "workbench.iconTheme": "vscode-icons"
 }
