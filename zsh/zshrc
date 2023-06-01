@@ -110,6 +110,7 @@ source "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # zsh-abbr
+export ABBR_USER_ABBREVIATIONS_FILE="${HOME}/.macdots/zsh/user-abbreviations"
 source "${HOMEBREW_PREFIX}/share/zsh-abbr/zsh-abbr.zsh"
 
 # export MANPATH="/usr/local/man:$MANPATH"
