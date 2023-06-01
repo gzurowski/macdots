@@ -1,3 +1,2 @@
-temurin-8.0.372+7 8
 temurin-11.0.19+7 11
 temurin-17.0.7+7 17
