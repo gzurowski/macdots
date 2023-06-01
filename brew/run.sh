@@ -20,6 +20,9 @@ fi
 # Update Homebrew
 brew update
 
+# Update all packages
+brew upgrade
+
 # Install all packages from Brewfile
 brew bundle --file "${BREWFILE}"
 
