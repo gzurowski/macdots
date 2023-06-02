@@ -4,6 +4,9 @@
     "editor.fontSize": 13,
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
+    "workbench.colorCustomizations": {
+        "sideBar.foreground": "#000000"
+    },
     "workbench.colorTheme": "Default Light+",
     "workbench.iconTheme": "vscode-icons"
 }
