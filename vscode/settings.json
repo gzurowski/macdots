@@ -1,4 +1,7 @@
 {
+    "editor.fontFamily": "Jetbrains Mono, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
     "workbench.colorTheme": "Default Light+",
