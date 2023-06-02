@@ -42,6 +42,7 @@ cask "visual-studio-code"
 cask "yubico-authenticator"
 
 # Fonts
+cask "font-jetbrains-mono"
 cask "font-meslo-lg-nerd-font"
 
 # App Store
