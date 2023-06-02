@@ -38,6 +38,7 @@ cask "microsoft-office"
 cask "microsoft-teams"
 cask "obsidian"
 cask "slack"
+cask "spotify"
 cask "visual-studio-code"
 cask "yubico-authenticator"
 
