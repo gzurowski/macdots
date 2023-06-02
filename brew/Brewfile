@@ -3,6 +3,7 @@ tap "homebrew/cask-fonts"
 tap "microsoft/git" # git-credential-manager-core
 tap "olets/tap" # zsh-abbr
 tap "romkatv/powerlevel10k"
+tap "warrensbox/tap" # fswitch
 
 brew "asdf"
 brew "bat"
@@ -16,6 +17,7 @@ brew "jq"
 brew "mas"
 brew "pinentry-mac"
 brew "powerlevel10k"
+brew "tfswitch"
 brew "tldr"
 brew "zoxide"
 brew "zsh"
