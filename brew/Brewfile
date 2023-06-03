@@ -40,6 +40,7 @@ cask "obsidian"
 cask "slack"
 cask "spotify"
 cask "visual-studio-code"
+cask "vuescan"
 cask "yubico-authenticator"
 
 # Fonts
