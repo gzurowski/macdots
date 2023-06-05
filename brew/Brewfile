@@ -6,6 +6,7 @@ tap "romkatv/powerlevel10k"
 tap "warrensbox/tap" # fswitch
 
 brew "asdf"
+brew "awscli"
 brew "bat"
 brew "coreutils"
 brew "fzf"
