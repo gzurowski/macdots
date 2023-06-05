@@ -5,6 +5,7 @@
     "editor.guides.bracketPairs": "active",
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "boundary",
     "workbench.colorCustomizations": {
         "sideBar.foreground": "#000000"
     },
