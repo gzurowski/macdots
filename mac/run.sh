@@ -8,6 +8,12 @@ if test "$(uname -m)" = "arm64" && \
     sudo sed -i '.bak' "2s/^/# Enable Touch ID for sudo:\nauth       sufficient     pam_tid.so\n/" /etc/pam.d/sudo
 fi
 
+# Disable creation of DS_Store files
+# ... on network shares
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+# ... on USB drives
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
 # Install Rosetta
 if test "$(uname -m)" = "arm64" && \
     ! pgrep -q oahd; then
