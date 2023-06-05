@@ -48,6 +48,7 @@ cask "visual-studio-code"
 cask "vuescan"
 cask "whatsapp"
 cask "yubico-authenticator"
+cask "zoom"
 
 # Fonts
 cask "font-jetbrains-mono"
