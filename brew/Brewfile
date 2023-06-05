@@ -55,3 +55,4 @@ cask "font-meslo-lg-nerd-font"
 
 # App Store
 mas "Magnet", id: 441258766
+mas "Microsoft To Do", id: 1274495053
