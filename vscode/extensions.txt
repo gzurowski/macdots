@@ -6,3 +6,4 @@ golang.go
 GraphQL.vscode-graphql-syntax
 jebbs.plantuml
 vscode-icons-team.vscode-icons
+zxh404.vscode-proto3
