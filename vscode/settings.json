@@ -1,7 +1,7 @@
 {
     "editor.fontFamily": "Jetbrains Mono, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
-    "editor.fontSize": 13,
+    "editor.fontSize": 12.6,
     "editor.guides.bracketPairs": "active",
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
