@@ -15,7 +15,7 @@ if ! test -d "$HOME/.oh-my-zsh"; then
 fi
 
 # Symlink custom aliases
-ln -sfv "${BASEDIR}/aliases.zh" "${HOME}/.oh-my-zsh/custom/aliases.zh"
+ln -sfv "${BASEDIR}/aliases.zsh" "${HOME}/.oh-my-zsh/custom/aliases.zsh"
 
 # Update oh-my-zsh
 "$HOME/.oh-my-zsh/tools/upgrade.sh"
