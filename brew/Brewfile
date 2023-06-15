@@ -8,6 +8,7 @@ tap "warrensbox/tap" # fswitch
 brew "asdf"
 brew "awscli"
 brew "bat"
+brew "buildifier" # Bazel build file formatter
 brew "coreutils"
 brew "fzf"
 brew "git"
