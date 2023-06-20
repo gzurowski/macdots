@@ -6,6 +6,7 @@
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "boundary",
+    "git.mergeEditor": true,
     "workbench.colorCustomizations": {
         "sideBar.foreground": "#000000"
     },
