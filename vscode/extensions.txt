@@ -6,6 +6,7 @@ esbenp.prettier-vscode
 GitHub.copilot
 golang.go
 GraphQL.vscode-graphql-syntax
+hashicorp.terraform
 jebbs.plantuml
 vscode-icons-team.vscode-icons
 zxh404.vscode-proto3
