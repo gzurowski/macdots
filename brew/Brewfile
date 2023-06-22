@@ -16,6 +16,7 @@ brew "git-delta"
 brew "gnupg"
 brew "graphviz" # for PlantUML
 brew "jq"
+brew "kubernetes-cli"
 brew "mas"
 brew "pinentry-mac"
 brew "powerlevel10k"
