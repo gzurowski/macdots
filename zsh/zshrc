@@ -139,3 +139,6 @@ source "${HOMEBREW_PREFIX}/share/zsh-abbr/zsh-abbr.zsh"
 
 # GPG
 export GPG_TTY=$(tty)
+
+# Postgres
+export PATH="${HOMEBREW_PREFIX}/opt/libpq/bin:$PATH"
