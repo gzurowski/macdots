@@ -68,4 +68,5 @@ cask "font-meslo-lg-nerd-font"
 # App Store
 mas "Magnet", id: 441258766
 mas "Microsoft To Do", id: 1274495053
+mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
