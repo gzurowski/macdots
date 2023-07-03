@@ -1,3 +1,5 @@
+Include config_home
+
 Host *
   AddKeysToArgent yes
   UseKeychain yes
