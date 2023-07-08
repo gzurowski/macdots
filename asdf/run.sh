@@ -55,3 +55,9 @@ for sdk in $(basename -s .txt "${BASEDIR}"/*.txt | grep -v plugins); do
     install_listed_sdks "$sdk"
     uninstall_unlisted_sdks "$sdk"
 done
+
+# Reshim plugins
+while read -r plugin; do
+    echo "Reshimming plugin '${plugin}'..."
+    asdf reshim "${plugin}"
+done < "${BASEDIR}/plugins.txt"
