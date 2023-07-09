@@ -142,3 +142,6 @@ export GPG_TTY=$(tty)
 
 # Postgres
 export PATH="${HOMEBREW_PREFIX}/opt/libpq/bin:$PATH"
+
+# Private
+source "${HOME}/.macdots/private/zsh/init.zsh"
