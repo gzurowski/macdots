@@ -7,5 +7,5 @@ ROOTDIR=$(dirname "${BASEDIR}")
 mkdir -p "${HOME}/.ssh"
 
 # Create symlinks
-ln -sfv "${BASEDIR}/ssh/config" "${HOME}/.ssh"
+ln -sfv "${BASEDIR}/config" "${HOME}/.ssh"
 ln -sfv "${ROOTDIR}/private/ssh/config_home" "${HOME}/.ssh"
