@@ -1,6 +1,6 @@
 Include config_home
 
 Host *
-  AddKeysToArgent yes
+  AddKeysToAgent yes
   UseKeychain yes
   IdentityFile ~/.ssh/id_rsa
