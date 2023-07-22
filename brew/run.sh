@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -e
 BASE_DIR=$(dirname "$(readlink -f "$0")")
-BREW_FILE="$(dirname "$0")/$1"
 
 if [[ $(sysctl -n machdep.cpu.brand_string) == *"Intel"* ]]; then
     # Only run the main Brewfile on Intel
