@@ -4,7 +4,8 @@ Dart-Code.flutter
 dbaeumer.vscode-eslint
 eamodio.gitlens
 esbenp.prettier-vscode
-GitHub.copilot
+github.copilot
+github.copilot-labs
 golang.go
 GraphQL.vscode-graphql-syntax
 hashicorp.terraform
