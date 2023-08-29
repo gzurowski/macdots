@@ -11,6 +11,7 @@ brew "asdf"
 brew "awscli"
 brew "bat"
 brew "buildifier" # Bazel build file formatter
+brew "cocoapods"
 brew "copier"
 brew "coreutils"
 brew "fzf"
