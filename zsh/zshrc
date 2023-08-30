@@ -144,6 +144,10 @@ source "${HOMEBREW_PREFIX}/share/zsh-abbr/zsh-abbr.zsh"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Flutter
+# See: https://github.com/oae/asdf-flutter#troubleshooting
+export FLUTTER_ROOT="$(asdf where flutter)"
+
 # GPG
 export GPG_TTY=$(tty)
 
