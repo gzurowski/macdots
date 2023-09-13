@@ -32,5 +32,7 @@
         "sideBar.foreground": "#000000"
     },
     "workbench.colorTheme": "Default Light+",
-    "workbench.iconTheme": "vscode-icons"
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.tree.indent": 10,
+  "workbench.tree.renderIndentGuides": "always"
 }
