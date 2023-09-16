@@ -4,7 +4,7 @@
 
 Without having GitHub's GPG key in the keychain, signatures for merge commits made by GitHub will show up as follows (`git log --show-signature`):
 
-```
+```text
 commit 478f512d2c4c379b29893b012ca717dbb85b5869 (upstream/master, origin/master, origin/HEAD, master)
 gpg: Signature made Do 17 Aug 13:29:15 2023 CEST
 gpg:                using RSA key 4AEE18F83AFDEB23
@@ -27,7 +27,7 @@ gpg --fingerprint 4AEE18F83AFDEB23
 
 This will change the message displayed by `git log --show-signature` as follows:
 
-```
+```text
 commit 478f512d2c4c379b29893b012ca717dbb85b5869 (upstream/master, origin/master, origin/HEAD, master)
 gpg: Signature made Do 17 Aug 13:29:15 2023 CEST
 gpg:                using RSA key 4AEE18F83AFDEB23
