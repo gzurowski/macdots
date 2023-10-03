@@ -27,6 +27,7 @@
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "boundary",
     "git.mergeEditor": true,
+  "terminal.integrated.fontFamily": "MesloLGSNFM-Regular",
   "terraform.languageServer.terraform.path": "/usr/local/bin/terraform",
     "workbench.colorCustomizations": {
         "sideBar.foreground": "#000000"
