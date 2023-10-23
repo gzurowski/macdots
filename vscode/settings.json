@@ -44,8 +44,10 @@
   "terminal.integrated.fontFamily": "MesloLGSNFM-Regular",
   "terraform.languageServer.terraform.path": "/usr/local/bin/terraform",
     "workbench.colorCustomizations": {
+    "[Default Light+]": {
     "dart.closingLabels": "#aaaaaa",
         "sideBar.foreground": "#000000"
+    }
     },
     "workbench.colorTheme": "Default Light+",
   "workbench.iconTheme": "vscode-icons",
