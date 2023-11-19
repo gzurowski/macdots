@@ -6,6 +6,7 @@ eamodio.gitlens
 esbenp.prettier-vscode
 github.copilot
 github.copilot-labs
+github.vscode-github-actions
 golang.go
 GraphQL.vscode-graphql-syntax
 hashicorp.terraform
