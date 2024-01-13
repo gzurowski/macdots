@@ -5,7 +5,7 @@ tap "homebrew/cask-fonts"
 tap "microsoft/git" # git-credential-manager-core
 tap "olets/tap" # zsh-abbr
 tap "romkatv/powerlevel10k"
-tap "warrensbox/tap" # fswitch
+tap "warrensbox/tap" # tfswitch
 
 brew "asdf"
 brew "awscli"
