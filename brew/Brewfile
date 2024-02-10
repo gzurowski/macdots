@@ -10,7 +10,6 @@ tap "warrensbox/tap" # tfswitch
 brew "asdf"
 brew "awscli"
 brew "bat"
-brew "buildifier" # Bazel build file formatter
 brew "cocoapods"
 brew "coreutils"
 brew "fzf"
