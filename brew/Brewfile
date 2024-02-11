@@ -1,4 +1,3 @@
-tap "datawire/blackbird" # telepresence
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -23,7 +22,6 @@ brew "libpq"
 brew "mas"
 brew "pinentry-mac"
 brew "powerlevel10k"
-brew "telepresence-arm64"
 brew "tfswitch"
 brew "tldr"
 brew "zoxide"
