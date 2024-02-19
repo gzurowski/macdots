@@ -17,7 +17,6 @@ brew "gnupg"
 brew "graphviz" # for PlantUML
 brew "jq"
 brew "kubernetes-cli"
-brew "libpq"
 brew "mas"
 brew "pinentry-mac"
 brew "powerlevel10k"
