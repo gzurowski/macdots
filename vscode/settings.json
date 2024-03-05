@@ -30,6 +30,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
   "debug.toolBarLocation": "commandCenter",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
