@@ -1,4 +1,4 @@
-.PHONY: brew git gpg iterm2 mac ssh vscode zsh
+.PHONY: brew git gpg iterm2 mac mise ssh vscode zsh
 
 brew:
 	@./brew/run.sh
@@ -14,6 +14,9 @@ iterm2:
 
 mac:
 	@./mac/run.sh
+
+mise:
+	@./mise/run.sh
 
 ssh:
 	@./ssh/run.sh
