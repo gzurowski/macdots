@@ -4,6 +4,7 @@
 # global tool versions go here
 # you can set these with `mise use -g`
 flutter = '3.19.2'
+node = '16.20.0'
 # Note: For installation of Poetry, a workaround as described in 
 # https://github.com/mise-plugins/mise-poetry/issues/9 is needed.
 poetry = '1.8.2'
