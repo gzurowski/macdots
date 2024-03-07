@@ -85,6 +85,7 @@ plugins=(
     flutter
     fzf
     git
+    mise
     zoxide
 )
 
