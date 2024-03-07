@@ -80,12 +80,12 @@ export ZSH_COMPDUMP=$ZH/cache/.zcompdump-${HOST}-${ZSH_VERSION}
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     brew
-    asdf
     docker
     docker-compose
     flutter
     fzf
     git
+    mise
     zoxide
 )
 
@@ -143,10 +143,6 @@ source "${HOMEBREW_PREFIX}/share/zsh-abbr/zsh-abbr.zsh"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Flutter
-# See: https://github.com/oae/asdf-flutter#troubleshooting
-export FLUTTER_ROOT="$(asdf where flutter)"
 
 # GPG
 export GPG_TTY=$(tty)

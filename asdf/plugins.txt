@@ -1,4 +1,0 @@
-alias
-flutter
-golang
-java
