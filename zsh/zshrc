@@ -86,8 +86,6 @@ plugins=(
     fzf
     git
     mise
-    poetry
-    poetry-env
     zoxide
 )
 
