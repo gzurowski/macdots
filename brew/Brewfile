@@ -6,6 +6,7 @@ tap "romkatv/powerlevel10k"
 tap "warrensbox/tap" # tfswitch
 
 brew "awscli"
+brew "aws-elasticbeanstalk"
 brew "bat"
 brew "cocoapods"
 brew "coreutils"
