@@ -4,6 +4,7 @@
 # global tool versions go here
 # you can set these with `mise use -g`
 flutter = '3.19.5'
+java = 'temurin-11.0.23+9'
 node = '20.11.1'
 python = '3.8.18'
 
