@@ -22,6 +22,13 @@
     "editor.defaultFormatter": "vscode.json-language-features",
     "editor.formatOnSave": false
   },
+  "[scminput]": {
+    "editor.rulers": [
+      50,
+      72
+    ],
+    "editor.wordWrap": "wordWrapColumn"
+  },
   "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform",
     "editor.formatOnSave": true,
