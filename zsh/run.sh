@@ -4,7 +4,6 @@ BASEDIR=$(dirname "$(readlink -f "$0")")
 
 # Create symlinks
 ln -sfv "${BASEDIR}/zshrc" "${HOME}/.zshrc"
-ln -sfv "${BASEDIR}/p10k.zsh" "${HOME}/.p10k.zsh"
 
 # Path to Homebrew's zsh
 ZSH_PATH="$(brew --prefix)/bin/zsh"
