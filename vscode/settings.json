@@ -57,6 +57,7 @@
     "editor.renderWhitespace": "boundary",
     "git.mergeEditor": true,
   "terminal.integrated.fontFamily": "MesloLGSNFM-Regular",
+  "terminal.integrated.copyOnSelection": true,
   "terraform.languageServer.terraform.path": "/usr/local/bin/terraform",
     "workbench.colorCustomizations": {
     "[Default Light+]": {
