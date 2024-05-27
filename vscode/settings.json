@@ -48,24 +48,26 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-    "editor.fontFamily": "Jetbrains Mono, Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 12.6,
-    "editor.guides.bracketPairs": "active",
-    "editor.inlineSuggest.enabled": true,
-    "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "boundary",
-    "git.mergeEditor": true,
+  "editor.formatOnSave": "modificationsIfAvailable",
+  "editor.fontFamily": "Jetbrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12.6,
+  "editor.guides.bracketPairs": "active",
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "boundary",
+  "git.mergeEditor": true,
+  "github.copilot.editor.enableAutoCompletions": true,
   "terminal.integrated.fontFamily": "MesloLGSNFM-Regular",
   "terminal.integrated.copyOnSelection": true,
   "terraform.languageServer.terraform.path": "/usr/local/bin/terraform",
-    "workbench.colorCustomizations": {
+  "workbench.colorCustomizations": {
     "[Default Light+]": {
-    "dart.closingLabels": "#aaaaaa",
-        "sideBar.foreground": "#000000"
+      "dart.closingLabels": "#99999959",
+      "sideBar.foreground": "#000000"
     }
-    },
-    "workbench.colorTheme": "Default Light+",
+  },
+  "workbench.colorTheme": "Default Light+",
   "workbench.iconTheme": "vscode-icons",
   "workbench.tree.indent": 10,
   "workbench.tree.renderIndentGuides": "always"
