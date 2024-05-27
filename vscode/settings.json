@@ -41,6 +41,7 @@
   "dart.previewFlutterUiGuides": true,
   "dart.previewFlutterUiGuidesCustomTracking": true,
   "debug.toolBarLocation": "commandCenter",
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
