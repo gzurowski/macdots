@@ -13,6 +13,11 @@ min_time = 1000
 format = '⧖ took [$duration]($style)'
 style = 'bold'
 
+[directory]
+truncation_length = 5
+truncate_to_repo = false
+truncation_symbol = '…/'
+
 # Disable the package module, hiding it from the prompt completely
 [package]
 disabled = true
