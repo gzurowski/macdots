@@ -46,7 +46,7 @@
   "debug.toolBarLocation": "commandCenter",
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "editor.formatOnSave": "modificationsIfAvailable",
   "editor.fontFamily": "Jetbrains Mono, Menlo, Monaco, 'Courier New', monospace",
