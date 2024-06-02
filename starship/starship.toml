@@ -30,4 +30,4 @@ stashed = ''
 disabled = true
 
 [terraform]
-format = "via [$symbol$version \\[$workspace\\]]($style) "
+format = 'via [$symbol$version \[$workspace\]]($style) '
