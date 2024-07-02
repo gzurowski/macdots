@@ -7,5 +7,8 @@ mkdir -p "${HOME}/.config/mise"
 # Create symlinks
 ln -sfv "${BASEDIR}/config.toml" "${HOME}/.config/mise"
 
+# Update plugins
+mise plugin update
+
 # Install tools
 mise install
