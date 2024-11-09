@@ -10,5 +10,8 @@ ln -sfv "${BASEDIR}/config.toml" "${HOME}/.config/mise"
 # Update plugins
 mise plugin update
 
+# Upgrage outdated tools
+mise upgrade
+
 # Install tools
 mise install
