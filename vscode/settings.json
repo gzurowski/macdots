@@ -56,6 +56,8 @@
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
+  "git.blame.editorDecoration.enabled": true,
+  "git.blame.statusBarItem.enabled": true,
   "git.mergeEditor": true,
   "github.copilot.editor.enableAutoCompletions": true,
   "terminal.integrated.fontFamily": "MesloLGSNFM-Regular",
