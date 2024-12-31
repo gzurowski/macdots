@@ -1,1 +1,7 @@
+# Color theme
 theme = "Builtin Light"
+
+# Non-blinking box cursor
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
