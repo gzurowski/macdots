@@ -132,6 +132,14 @@ source "${HOMEBREW_PREFIX}/share/zsh-abbr/zsh-abbr.zsh"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Ghostty
+
+# Set TERM variable to xterm-256color if running in Ghostty.
+# See: https://ghostty.org/docs/help/terminfo
+if [[ "$TERM_PROGRAM" == "ghostty" ]]; then
+    export TERM=xterm-256color
+fi
+
 # GPG
 export GPG_TTY=$(tty)
 
