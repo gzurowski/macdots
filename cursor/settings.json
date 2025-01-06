@@ -1,15 +1,15 @@
 {
-    "git.blame.editorDecoration.enabled": true,
-    "git.blame.statusBarItem.enabled": true,  
-    "window.commandCenter": 1,
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Default Light Modern",
-    "workbench.activityBar.orientation": "vertical",
     "[scminput]": {
       "editor.rulers": [
         50,
         72
       ],
       "editor.wordWrap": "wordWrapColumn"
-    }
+    },
+    "git.blame.editorDecoration.enabled": true,
+    "git.blame.statusBarItem.enabled": true,  
+    "window.commandCenter": 1,
+    "workbench.activityBar.orientation": "vertical",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Default Light Modern"
 }
