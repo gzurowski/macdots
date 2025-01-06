@@ -4,5 +4,12 @@
     "window.commandCenter": 1,
     "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "Default Light Modern",
-    "workbench.activityBar.orientation": "vertical"
+    "workbench.activityBar.orientation": "vertical",
+    "[scminput]": {
+      "editor.rulers": [
+        50,
+        72
+      ],
+      "editor.wordWrap": "wordWrapColumn"
+    }
 }
