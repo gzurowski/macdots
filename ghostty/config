@@ -1,3 +1,9 @@
+#
+# Ghostty configuration
+#
+# For an overview of options, see: https://ghostty.org/docs/config/reference
+#
+
 # Color theme
 theme = "Builtin Light"
 
