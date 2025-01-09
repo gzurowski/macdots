@@ -5,3 +5,8 @@ theme = "Builtin Light"
 cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor
+
+# Enable copy-on-select
+# Must be explicitly enabled on macOS.
+# See: https://ghostty.org/docs/config/reference#copy-on-select
+copy-on-select = true
