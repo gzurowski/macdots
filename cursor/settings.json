@@ -6,6 +6,11 @@
       ],
       "editor.wordWrap": "wordWrapColumn"
     },
+    "[terraform]": {
+      "editor.defaultFormatter": "hashicorp.terraform",
+      "editor.formatOnSave": true,
+      "editor.tabSize": 2
+    },
     "git.blame.editorDecoration.enabled": true,
     "git.blame.statusBarItem.enabled": true,  
     "window.commandCenter": 1,
