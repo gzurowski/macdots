@@ -6,6 +6,9 @@
       ],
       "editor.wordWrap": "wordWrapColumn"
     },
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
     "[terraform]": {
       "editor.defaultFormatter": "hashicorp.terraform",
       "editor.formatOnSave": true,
