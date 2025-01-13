@@ -20,5 +20,5 @@
     "window.commandCenter": 1,
     "workbench.activityBar.orientation": "vertical",
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Default Light Modern"
+    "workbench.colorTheme": "Visual Studio Light"
 }
