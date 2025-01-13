@@ -13,6 +13,7 @@
     },
     "git.blame.editorDecoration.enabled": true,
     "git.blame.statusBarItem.enabled": true,  
+    "git.confirmSync": false,
     "window.commandCenter": 1,
     "workbench.activityBar.orientation": "vertical",
     "workbench.iconTheme": "vscode-icons",
