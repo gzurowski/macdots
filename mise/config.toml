@@ -5,7 +5,7 @@
 # you can set these with `mise use -g`
 flutter = '3.19.6'
 java = 'temurin-21.0.3+9.0.LTS'
-go = '1.22.4'
+go = '1.23'
 node = '20.15.0'
 python = "3.12.4"
 rust = "latest"
