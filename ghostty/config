@@ -16,3 +16,6 @@ shell-integration-features = no-cursor
 # Must be explicitly enabled on macOS.
 # See: https://ghostty.org/docs/config/reference#copy-on-select
 copy-on-select = true
+
+window-padding-x = 5
+window-padding-y = 5
