@@ -10,6 +10,7 @@ GraphQL.vscode-graphql-syntax
 hashicorp.terraform
 jebbs.plantuml
 ms-python.python
+ms-vscode.live-server
 ms-vscode-remote.remote-containers
 ms-vscode-remote.vscode-remote-extensionpack
 streetsidesoftware.code-spell-checker
