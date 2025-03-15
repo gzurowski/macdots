@@ -1,4 +1,4 @@
-.PHONY: brew cursor ghostty git gpg iterm2 mac mise ssh starship vscode zsh
+.PHONY: brew cursor ghostty git gpg mac mise ssh starship vscode zsh
 
 brew:
 	@./brew/run.sh
@@ -14,9 +14,6 @@ git:
 
 gpg:
 	@./gpg/run.sh
-
-iterm2:
-	@./iterm2/run.sh
 
 mac:
 	@./mac/run.sh
