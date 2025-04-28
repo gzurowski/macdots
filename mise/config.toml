@@ -59,3 +59,6 @@ status = { missing_tools = "if_other_versions_installed", show_env = false, show
 # See: https://mise.jdx.dev/lang/python.html#python.uv_venv_auto
 # See: https://github.com/jdx/mise/issues/3211
 python.uv_venv_auto = true
+
+# Enable idiomatic version file support (e.g., `.nvmrc` for Node)
+idiomatic_version_file_enable_tools = ["node"]
