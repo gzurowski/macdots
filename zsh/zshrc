@@ -82,12 +82,7 @@ plugins=(
     zoxide
 )
 
-# Support Intel/ARM Homebrew
-if [ "$(arch)" = "arm64" ]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-else
-    eval "$(/usr/local/bin/brew shellenv)"
-fi
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -143,9 +138,14 @@ fi
 # GPG
 export GPG_TTY=$(tty)
 
+# Poetry
+export POETRY_CONFIG_DIR="${HOME}/.config/pypoetry"
+
 # Postgres
 export PATH="${HOMEBREW_PREFIX}/opt/libpq/bin:$PATH"
 
 # Starship
 export STARSHIP_CONFIG="${HOME}/.config/starship/starship.toml"
 eval "$(starship init zsh)"
+
+source /Users/gregor/.config/broot/launcher/bash/br
