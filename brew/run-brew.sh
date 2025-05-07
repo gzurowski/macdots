@@ -1,23 +1,15 @@
 #!/usr/bin/env bash
-set -e
-BREW_FILE="$1"
-BREW_PATH="/opt/homebrew" # Apple Silicon
-if test "$(uname -m)" = "x86_64"; then
-    BREW_PATH="/usr/local" # Intel
-fi
+set -ex
 
-echo "Homebrew: $BREW_PATH"
-echo "Brewfile: $BREW_FILE"
+BASE_DIR=$(dirname "$(readlink -f "$0")")
+BREW_FILE="${BASE_DIR}/Brewfile"
 
-# Install Homebrew
-if ! test -f "$BREW_PATH/bin/brew"; then
+if ! command -v brew &> /dev/null; then
     echo "Installing Homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-fi
 
-# Set Homebrew environment if not already set
-if test -d "$BREW_PATH"; then
-    eval "$("${BREW_PATH}"/bin/brew shellenv)"
+    $BREW_PATH=$(command -v brew)
+    eval "$(${BREW_PATH} shellenv)"
 fi
 
 # Update Homebrew
