@@ -90,6 +90,7 @@ cask "whatsapp"
 cask "yubico-authenticator"
 cask "yubico-yubikey-manager"
 cask "zoom"
+cask "zotero"
 
 # Fonts
 cask "font-jetbrains-mono"
