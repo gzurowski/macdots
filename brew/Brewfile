@@ -1,6 +1,5 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-fonts"
 tap "olets/tap" # zsh-abbr
 tap "romkatv/powerlevel10k"
 tap "warrensbox/tap" # tfswitch
