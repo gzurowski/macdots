@@ -4,6 +4,7 @@ tap "olets/tap" # zsh-abbr
 tap "romkatv/powerlevel10k"
 tap "warrensbox/tap" # tfswitch
 
+brew "atuin"
 brew "awscli"
 brew "aws-elasticbeanstalk"
 brew "azure-cli"
