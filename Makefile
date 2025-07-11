@@ -1,10 +1,13 @@
-.PHONY: atuin brew cursor ghostty git gpg mac mise ssh starship vscode zsh
+.PHONY: atuin brew claude cursor ghostty git gpg mac mise ssh starship vscode zsh
 
 atuin:
 	@./atuin/run.sh
 
 brew:
 	@./brew/run.sh
+
+claude:
+	@./claude/run.sh
 
 cursor:
 	@./cursor/run.sh
