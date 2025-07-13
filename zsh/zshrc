@@ -140,9 +140,6 @@ fi
 # GPG
 export GPG_TTY=$(tty)
 
-# Poetry
-export POETRY_CONFIG_DIR="${HOME}/.config/pypoetry"
-
 # Postgres
 export PATH="${HOMEBREW_PREFIX}/opt/libpq/bin:$PATH"
 
