@@ -1,5 +1,4 @@
-Include config_home
-Include config_researchhub
+Include config_*
 
 Host *
   AddKeysToAgent yes
