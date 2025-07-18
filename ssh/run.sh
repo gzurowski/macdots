@@ -16,3 +16,15 @@ for config_file in "${ROOTDIR}/private/ssh/config_"*; do
         ln -sfv "$config_file" "${HOME}/.ssh/$filename"
     fi
 done
+
+# Remove symlinks for config_* files that no longer exist in private/ssh
+for symlink in "${HOME}/.ssh/config_"*; do
+    if [[ -L "$symlink" ]]; then
+        filename=$(basename "$symlink")
+        source_file="${ROOTDIR}/private/ssh/$filename"
+        if [[ ! -f "$source_file" ]]; then
+            echo "Removing orphaned symlink: $symlink"
+            rm -f "$symlink"
+        fi
+    fi
+done
