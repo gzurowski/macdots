@@ -10,6 +10,7 @@ golang.go
 GraphQL.vscode-graphql-syntax
 hashicorp.terraform
 jebbs.plantuml
+ms-python.isort
 ms-python.python
 ms-vscode.live-server
 ms-vscode-remote.remote-containers
