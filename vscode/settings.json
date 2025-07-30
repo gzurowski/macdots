@@ -22,6 +22,11 @@
     "editor.defaultFormatter": "vscode.json-language-features",
     "editor.formatOnSave": false
   },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
   "[scminput]": {
     "editor.rulers": [
       50,
