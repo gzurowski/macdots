@@ -1,7 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "olets/tap" # zsh-abbr
-tap "romkatv/powerlevel10k"
 tap "supersonic-app/supersonic"
 tap "warrensbox/tap" # tfswitch
 
@@ -29,7 +28,6 @@ brew "mas"
 brew "mise"
 brew "pinentry-mac"
 brew "pkg-config"
-brew "powerlevel10k"
 brew "starship"
 brew "terraformer"
 brew "tfswitch"
