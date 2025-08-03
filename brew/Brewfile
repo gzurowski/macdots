@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "olets/tap" # zsh-abbr
 tap "romkatv/powerlevel10k"
+tap "supersonic-app/supersonic"
 tap "warrensbox/tap" # tfswitch
 
 brew "atuin"
@@ -82,6 +83,7 @@ cask "slack"
 cask "sonos"
 cask "spacedrive"
 cask "spotify"
+cask "supersonic", args: { no_quarantine: true }
 cask "utm"
 cask "visual-studio-code"
 cask "vlc"
