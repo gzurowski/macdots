@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>org.zurowski.cleanup_downloads</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/gregor/.macdots/mac/downloads_cleanup/DownloadsCleanup.app/Contents/MacOS/cleanup_downloads</string>
+    </array>
+    
+    <key>AssociatedBundleIdentifiers</key>
+    <string>org.zurowski.cleanup_downloads</string>
+    
+    <!-- Run every 24h and after login -->
+    <key>StartInterval</key>
+    <integer>86400</integer>
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- Logs -->
+    <key>StandardOutPath</key>
+    <string>/Users/gregor/Library/Logs/downloads_cleanup_stdout.log</string>
+    
+    <key>StandardErrorPath</key>
+    <string>/Users/gregor/Library/Logs/downloads_cleanup_stderr.log</string>
+</dict>
+</plist>
