@@ -2,11 +2,11 @@
 set -e
 BASEDIR=$(dirname "$(readlink -f "$0")")
 
-# Enable Touch ID for sudo on Silicon Macs
-if test "$(uname -m)" = "arm64" && \
-    ! grep -Eq "auth\s+sufficient\s+pam_tid.so" /etc/pam.d/sudo; then
+# Enable Touch ID for sudo
+SUDO_LOCAL="/etc/pam.d/sudo_local"
+if [ ! -f "$SUDO_LOCAL" ] || ! grep -q "pam_tid.so" "$SUDO_LOCAL"; then
     echo "Enabling Touch ID for sudo..."
-    sudo sed -i '.bak' "2s/^/# Enable Touch ID for sudo:\nauth       sufficient     pam_tid.so\n/" /etc/pam.d/sudo
+    echo "auth       sufficient     pam_tid.so" | sudo tee "$SUDO_LOCAL" > /dev/null
 fi
 
 # Disable creation of DS_Store files
