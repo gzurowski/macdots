@@ -1,1 +1,4 @@
 brew/Brewfile*.lock.json
+
+# mac
+mac/downloads_cleanup/DownloadsCleanup.app/Contents/MacOS/
