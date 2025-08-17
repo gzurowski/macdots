@@ -38,7 +38,7 @@ ln -sfv "${CLEANUP_DIR}/downloads_cleanup.plist" "${HOME}/Library/LaunchAgents/o
 SERVICE_NAME="org.zurowski.cleanup_downloads"
 if ! launchctl list | grep -q "$SERVICE_NAME"; then
     echo "Loading $SERVICE_NAME..."
-    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/${SERVICE_NAME}.plist
+    launchctl bootstrap gui/"$(id -u)" ~/Library/LaunchAgents/${SERVICE_NAME}.plist
 else
     echo "$SERVICE_NAME already loaded"
 fi
