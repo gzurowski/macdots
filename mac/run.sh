@@ -23,22 +23,4 @@ if test "$(uname -m)" = "arm64" && \
 fi
 
 # Downloads cleanup script
-CLEANUP_DIR="${BASEDIR}/downloads_cleanup"
-chmod +x "${CLEANUP_DIR}/downloads_cleanup.sh"
-
-# Create app bundle for better macOS integration (Info.plist already exists in the bundle)
-APP_DIR="${CLEANUP_DIR}/DownloadsCleanup.app"
-mkdir -p "${APP_DIR}/Contents/MacOS"
-ln -sf "${CLEANUP_DIR}/downloads_cleanup.sh" "${APP_DIR}/Contents/MacOS/cleanup_downloads"
-
-# Install LaunchAgent
-ln -sfv "${CLEANUP_DIR}/downloads_cleanup.plist" "${HOME}/Library/LaunchAgents/org.zurowski.cleanup_downloads.plist"
-
-# Load the LaunchAgent using modern approach
-SERVICE_NAME="org.zurowski.cleanup_downloads"
-if ! launchctl list | grep -q "$SERVICE_NAME"; then
-    echo "Loading $SERVICE_NAME..."
-    launchctl bootstrap gui/"$(id -u)" ~/Library/LaunchAgents/${SERVICE_NAME}.plist
-else
-    echo "$SERVICE_NAME already loaded"
-fi
+bash "${BASEDIR}/downloads_cleanup/install.sh"
