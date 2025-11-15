@@ -3,7 +3,7 @@
 [tools]
 # global tool versions go here
 # you can set these with `mise use -g`
-flutter = '3.19.6'
+flutter = '3.27'
 java = 'temurin-21.0.3+9.0.LTS'
 go = 'prefix:1.24'
 node = '20.15.0'
