@@ -1,0 +1,34 @@
+# organize configuration file
+# https://organize.readthedocs.io
+
+rules:
+  - name: "Delete old files from Downloads"
+    locations:
+      - path: "~/Downloads"
+    subfolders: true
+    filters:
+      - created:
+          days: 14
+    actions:
+      - trash
+
+  - name: "Delete DS_Store files from Downloads"
+    targets: files
+    locations:
+      - path: "~/Downloads"
+        system_exclude_files: []
+    subfolders: true
+    filters:
+      - name: ".DS_Store"
+    actions:
+      - trash
+
+  - name: "Delete empty folders in Downloads"
+    targets: dirs
+    locations:
+      - path: "~/Downloads"
+    subfolders: true
+    filters:
+      - empty
+    actions:
+      - trash

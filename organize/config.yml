@@ -1,8 +1,0 @@
-# organize configuration file
-# https://organize.readthedocs.io
-
-rules:
-  - locations:
-    filters:
-    actions:
-      - echo: "Hello, World!"
