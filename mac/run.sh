@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 set -e
-BASEDIR=$(dirname "$(readlink -f "$0")")
 
 # Enable Touch ID for sudo
 SUDO_LOCAL="/etc/pam.d/sudo_local"
@@ -21,6 +20,3 @@ if test "$(uname -m)" = "arm64" && \
     echo "Installing Rosetta..."
     sudo softwareupdate --install-rosetta --agree-to-license
 fi
-
-# Downloads cleanup script
-bash "${BASEDIR}/downloads_cleanup/install.sh"
