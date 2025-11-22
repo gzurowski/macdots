@@ -27,6 +27,11 @@ mac:
 mise:
 	@./mise/run.sh
 
+.PHONY: organize
+organize:
+	@chmod +x ./organize/run.sh
+	@./organize/run.sh
+
 ssh:
 	@./ssh/run.sh
 
