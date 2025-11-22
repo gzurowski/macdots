@@ -21,6 +21,3 @@ if test "$(uname -m)" = "arm64" && \
     echo "Installing Rosetta..."
     sudo softwareupdate --install-rosetta --agree-to-license
 fi
-
-# Downloads cleanup script
-bash "${BASEDIR}/downloads_cleanup/install.sh"
