@@ -2,16 +2,6 @@
 # https://organize.readthedocs.io
 
 rules:
-  - name: "Delete old files from Downloads"
-    locations:
-      - path: "~/Downloads"
-    subfolders: true
-    filters:
-      - created:
-          days: 14
-    actions:
-      - trash
-
   - name: "Delete DS_Store files from Downloads"
     targets: files
     locations:
@@ -23,10 +13,22 @@ rules:
     actions:
       - trash
 
+  - name: "Delete old files from Downloads"
+    locations:
+      - path: "~/Downloads"
+    subfolders: true
+    filters:
+      - created:
+          days: 14
+    actions:
+      - trash
+
   - name: "Delete empty folders in Downloads"
     targets: dirs
     locations:
       - path: "~/Downloads"
+        max_depth: null
+        search: depth
     subfolders: true
     filters:
       - empty
