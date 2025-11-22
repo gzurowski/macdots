@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 set -e
-BASEDIR=$(dirname "$(readlink -f "$0")")
 
 # Enable Touch ID for sudo
 SUDO_LOCAL="/etc/pam.d/sudo_local"
