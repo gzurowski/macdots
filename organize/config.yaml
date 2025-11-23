@@ -19,7 +19,7 @@ rules:
     subfolders: true
     filters:
       - created:
-          days: 14
+          days: 30
     actions:
       - trash
 
