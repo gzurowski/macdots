@@ -10,6 +10,7 @@ golang.go
 GraphQL.vscode-graphql-syntax
 hashicorp.terraform
 jebbs.plantuml
+mermaidchart.vscode-mermaid-chart
 ms-python.debugpy
 ms-python.isort
 ms-python.python
