@@ -20,4 +20,3 @@ streetsidesoftware.code-spell-checker
 tamasfe.even-better-toml
 tomoki1207.pdf
 vscode-icons-team.vscode-icons
-zxh404.vscode-proto3
