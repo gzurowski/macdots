@@ -6,6 +6,7 @@
 flutter = '3.27'
 java = 'temurin-21.0.3+9.0.LTS'
 go = 'prefix:1.25'
+maven = '3.9.12'
 node = '20.15.0'
 python = "3.13"
 rust = "latest"
