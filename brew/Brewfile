@@ -95,8 +95,7 @@ cask "zoom"
 cask "zotero"
 
 # Fonts
-cask "font-jetbrains-mono"
-cask "font-meslo-lg-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
 
 # App Store
 mas "Disk Graph", id: 697942581
