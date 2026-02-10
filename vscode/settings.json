@@ -65,7 +65,8 @@
   "git.blame.statusBarItem.enabled": true,
   "git.mergeEditor": true,
   "github.copilot.editor.enableAutoCompletions": true,
-  "terminal.integrated.fontFamily": "MesloLGSNFM-Regular",
+  "terminal.integrated.fontFamily": "Jetbrains Mono",
+  "terminal.integrated.fontSize": 13,
   "terminal.integrated.copyOnSelection": true,
   "terraform.languageServer.terraform.path": "/usr/local/bin/terraform",
   "workbench.colorCustomizations": {
