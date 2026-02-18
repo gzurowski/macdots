@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // Firefox user settings
 //
 // See: https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data
