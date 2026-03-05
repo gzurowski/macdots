@@ -21,6 +21,7 @@ brew "git-delta"
 brew "gnupg"
 brew "graphviz" # for PlantUML
 brew "hugo"
+brew "imagemagick"
 brew "jq"
 brew "libpq"
 brew "mas"
