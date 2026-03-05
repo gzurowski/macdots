@@ -22,7 +22,6 @@ brew "gnupg"
 brew "graphviz" # for PlantUML
 brew "hugo"
 brew "jq"
-brew "kubernetes-cli"
 brew "libpq"
 brew "mas"
 brew "mise"
