@@ -22,6 +22,7 @@ brew "gnupg"
 brew "graphviz" # for PlantUML
 brew "hugo"
 brew "imagemagick"
+brew "img2pdf"
 brew "jq"
 brew "libpq"
 brew "mas"
