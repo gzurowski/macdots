@@ -56,7 +56,9 @@
   },
   "editor.formatOnSave": "modificationsIfAvailable",
   "editor.fontFamily": "Jetbrains Mono Nerd Font, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true,
+  // calt: operators (e.g., !=, =>, etc.)
+  // liga: common ligatures (e.g., fi, fl, etc.)
+  "editor.fontLigatures": "'calt' on, 'liga' off",
   "editor.fontSize": 13,
   "editor.guides.bracketPairs": "active",
   "editor.inlineSuggest.enabled": true,
