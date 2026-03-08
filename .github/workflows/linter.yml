@@ -3,6 +3,9 @@ name: Lint Code Base
 
 on: push
 
+permissions:
+  contents: read
+
 jobs:
   build:
     name: Lint Code Base
