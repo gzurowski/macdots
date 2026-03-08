@@ -9,4 +9,4 @@ ln -sfv "${BASEDIR}/settings.json" "${HOME}/Library/Application Support/Code/Use
 # Install extensions
 while read -r EXTENSION; do
     code --install-extension "${EXTENSION}"
-done < "${EXTENSIONS_FILE}"
+done <"${EXTENSIONS_FILE}"
