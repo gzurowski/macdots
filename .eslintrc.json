@@ -1,0 +1,8 @@
+{
+  "overrides": [
+    {
+      "files": ["vscode/settings.json"],
+      "extends": ["plugin:jsonc/recommended-with-jsonc"]
+    }
+  ]
+}
