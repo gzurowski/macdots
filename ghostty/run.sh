@@ -2,4 +2,6 @@
 set -ex
 BASEDIR=$(dirname "$(readlink -f "$0")")
 
-ln -sfv "${BASEDIR}"/config "${HOME}/Library/Application Support/com.mitchellh.ghostty/"
+mkdir -p "${HOME}/.config/ghostty"
+
+ln -sfv "${BASEDIR}"/config "${HOME}/.config/ghostty/config"
