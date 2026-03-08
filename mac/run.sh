@@ -15,7 +15,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 # Install Rosetta
-if test "$(uname -m)" = "arm64" && \
+if test "$(uname -m)" = "arm64" &&
     ! pgrep -q oahd; then
     echo "Installing Rosetta..."
     sudo softwareupdate --install-rosetta --agree-to-license
