@@ -18,4 +18,5 @@ jobs:
         uses: github/super-linter/slim@v5
         env:
           DEFAULT_BRANCH: main
+          FILTER_REGEX_EXCLUDE: .*vscode/settings\.json
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
