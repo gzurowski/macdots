@@ -13,7 +13,7 @@
     s = status
 
     # scripts
-    fuzzy-checkout = !bash -c 'source $HOME/.gitfunc && fzf-git-checkout'
+    fuzzy-checkout = !bash -c 'source $HOME/.gitfunc.sh && fzf-git-checkout'
 
 [commit]
     # Sign commits
