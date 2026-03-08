@@ -12,6 +12,10 @@ claude:
 cursor:
 	@./cursor/run.sh
 
+.PHONY: eza
+eza:
+	@./eza/run.sh
+
 firefox:
 	@./firefox/run.sh
 
