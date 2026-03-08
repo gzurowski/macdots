@@ -5,7 +5,7 @@ set -e
 SUDO_LOCAL="/etc/pam.d/sudo_local"
 if [ ! -f "$SUDO_LOCAL" ] || ! grep -q "pam_tid.so" "$SUDO_LOCAL"; then
     echo "Enabling Touch ID for sudo..."
-    echo "auth       sufficient     pam_tid.so" | sudo tee "$SUDO_LOCAL" > /dev/null
+    echo "auth       sufficient     pam_tid.so" | sudo tee "$SUDO_LOCAL" >/dev/null
 fi
 
 # Disable creation of DS_Store files
