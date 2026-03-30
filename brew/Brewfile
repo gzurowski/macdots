@@ -85,6 +85,7 @@ cask "sonos"
 cask "spacedrive"
 cask "spotify"
 cask "stats"
+cask "super-productivity"
 cask "supersonic", args: { no_quarantine: true }
 cask "utm"
 cask "visual-studio-code"
