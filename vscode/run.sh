@@ -10,3 +10,6 @@ ln -sfv "${BASEDIR}/settings.json" "${HOME}/Library/Application Support/Code/Use
 while read -r EXTENSION; do
     code --install-extension "${EXTENSION}"
 done <"${EXTENSIONS_FILE}"
+
+# Install Devcontainer CLI
+npm install -g @devcontainers/cli
