@@ -2,7 +2,6 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "olets/tap" # zsh-abbr
 tap "supersonic-app/supersonic"
-tap "warrensbox/tap" # tfswitch
 
 brew "atuin"
 brew "awscli"
@@ -35,7 +34,6 @@ brew "pinentry-mac"
 brew "pkg-config"
 brew "starship"
 brew "terraformer"
-brew "tfswitch"
 brew "tldr"
 brew "zoxide"
 brew "zsh"
