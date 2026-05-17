@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "olets/tap" # zsh-abbr
 tap "supersonic-app/supersonic"
+tap "warrensbox/tap"
 
 brew "atuin"
 brew "awscli"
@@ -84,6 +85,7 @@ cask "spacedrive"
 cask "spotify"
 cask "stats"
 cask "supersonic", args: { no_quarantine: true }
+cask "tfswitch"
 cask "tropy"
 cask "utm"
 cask "visual-studio-code"
