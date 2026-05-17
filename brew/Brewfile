@@ -93,7 +93,6 @@ cask "vmware-fusion"
 cask "vuescan"
 cask "whatsapp"
 cask "yubico-authenticator"
-cask "yubico-yubikey-manager"
 cask "zoom"
 cask "zotero"
 
