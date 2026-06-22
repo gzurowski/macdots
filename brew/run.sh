@@ -12,6 +12,10 @@ if ! command -v brew &>/dev/null; then
     eval "$(${BREW_PATH} shellenv)"
 fi
 
+# Disable ask mode (the default since Homebrew 6)
+# See: https://github.com/Homebrew/brew/issues/22597#issuecomment-4652639349
+export HOMEBREW_NO_ASK=1
+
 # Update Homebrew
 brew update
 
