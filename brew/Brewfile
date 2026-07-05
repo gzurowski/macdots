@@ -84,6 +84,7 @@ cask "spotify"
 cask "stats"
 cask "supersonic", args: { no_quarantine: true }
 cask "tfswitch"
+cask "thaw"
 cask "tropy"
 cask "utm"
 cask "visual-studio-code"
