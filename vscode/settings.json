@@ -80,6 +80,7 @@
   },
   "workbench.colorTheme": "Default Light+",
   "workbench.iconTheme": "vscode-icons",
+  "workbench.experimental.modernUI": false,
   "workbench.tree.indent": 10,
   "workbench.tree.renderIndentGuides": "always"
 }
