@@ -1,7 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "olets/tap", trusted: true  # zsh-abbr
-tap "shloop/tap/google-book-scraper", trusted: true  # gbscraper
+tap "shloop/tap", trusted: true  # google-book-scraper
 tap "supersonic-app/supersonic", trusted: true
 tap "warrensbox/tap", trusted: true  # tfswitch
 
@@ -17,7 +17,7 @@ brew "curlie"
 brew "dcraw"
 brew "eza"
 brew "fzf"
-brew "gbscraper"
+brew "google-book-scraper"
 brew "gh"
 brew "git"
 brew "git-delta"
