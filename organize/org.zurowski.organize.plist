@@ -9,7 +9,7 @@
     <array>
         <string>/opt/homebrew/bin/organize</string>
         <string>run</string>
-        <string>/Users/gregor/.config/organize</string>
+        <string>/Users/gregor/.config/organize/config.yaml</string>
     </array>
 
     <key>StartCalendarInterval</key>
