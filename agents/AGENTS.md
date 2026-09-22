@@ -8,3 +8,4 @@
 ## Tests
 
 - Do not create tombstone tests that verify removed functionality is gone (e.g. asserting a deleted function, endpoint, or field no longer exists). When functionality is removed, delete its tests too rather than adding tests that assert its absence.
+- Do not write tests that verify behavior owned by a third-party library or framework (e.g. that gzip middleware actually compresses responses, or that an ORM persists a row). Assume dependencies work as documented; test only your own code and the non-trivial logic in how it wires or configures them.
