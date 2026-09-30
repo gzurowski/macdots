@@ -12,6 +12,7 @@
     rbi = rebase --interactive
     s = status
     sw = switch
+    swc = switch --create
 
     # scripts
     fuzzy-checkout = !bash -c 'source $HOME/.gitfunc.sh && fzf-git-checkout'
