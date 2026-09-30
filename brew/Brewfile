@@ -1,10 +1,10 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "keidarcy/tap"  # e1s
 tap "olets/tap", trusted: true  # zsh-abbr
 tap "shloop/tap", trusted: true  # google-book-scraper
 tap "supersonic-app/supersonic", trusted: true
 tap "warrensbox/tap", trusted: true  # tfswitch
-
 brew "atuin"
 brew "awscli"
 brew "aws-elasticbeanstalk"
@@ -15,6 +15,7 @@ brew "cocoapods"
 brew "ctop"
 brew "curlie"
 brew "dcraw"
+brew "e1s"
 brew "eza"
 brew "ffmpeg"
 brew "fzf"
