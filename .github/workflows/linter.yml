@@ -23,3 +23,4 @@ jobs:
           DEFAULT_BRANCH: main
           FILTER_REGEX_EXCLUDE: .*vscode/settings\.json
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_NATURAL_LANGUAGE: false
