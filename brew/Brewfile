@@ -8,7 +8,6 @@ tap "warrensbox/tap", trusted: true  # tfswitch
 brew "atuin"
 brew "awscli"
 brew "aws-elasticbeanstalk"
-brew "azure-cli"
 brew "bat"
 brew "btop"
 brew "cocoapods"
