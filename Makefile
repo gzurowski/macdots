@@ -10,6 +10,10 @@ brew:
 claude:
 	@./claude/run.sh
 
+.PHONY: codex
+codex:
+	@./codex/run.sh
+
 .PHONY: eza
 eza:
 	@./eza/run.sh
