@@ -10,6 +10,7 @@ github.vscode-github-actions
 golang.go
 GraphQL.vscode-graphql-syntax
 hashicorp.terraform
+james-yu.latex-workshop
 jebbs.plantuml
 mermaidchart.vscode-mermaid-chart
 ms-python.debugpy
