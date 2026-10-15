@@ -1,6 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "keidarcy/tap"  # e1s
+tap "keidarcy/tap", trusted: true  # e1s
 tap "olets/tap", trusted: true  # zsh-abbr
 tap "shloop/tap", trusted: true  # google-book-scraper
 tap "supersonic-app/supersonic", trusted: true
