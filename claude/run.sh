@@ -11,5 +11,5 @@ ln -sfv "${REPO_ROOT}/agents/AGENTS.md" "${HOME}/.claude/CLAUDE.md"
 mkdir -p "${HOME}/.claude/skills"
 
 for skill in "${REPO_ROOT}"/agents/skills/*/; do
-  ln -sfnv "${skill%/}" "${HOME}/.claude/skills/$(basename "${skill}")"
+    ln -sfnv "${skill%/}" "${HOME}/.claude/skills/$(basename "${skill}")"
 done
