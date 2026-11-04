@@ -10,6 +10,7 @@
 ## Code style
 
 - Keep nesting shallow. Use guard clauses with early `return`, and `continue`/`break` in loops, to handle edge cases first — avoid the Arrow Anti-Pattern (deeply nested conditionals). The main logic should sit at the base indentation level.
+  - This also applies to flat code: when a function branches into two returns, put the invalid or exceptional case in the `if` and make the expected path the final, unconditional return.
 - Keep comments short and concise. Don't restate in prose what the code already says — comment only when it adds value: the non-obvious "why", intent, or caveats.
 
 ## Tests
