@@ -12,3 +12,6 @@ user_pref("browser.tabs.tabClipWidth", 40);
 
 // Reduce minimum tab width (default is 76)
 user_pref("browser.tabs.tabMinWidth", 40);
+
+// Skip Local Network Access checks for these domains
+user_pref("network.lna.skip-domains", "bonob.zurowski.org");
